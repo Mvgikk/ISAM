@@ -15,14 +15,20 @@ The project contains implementations of methods that allow adding, deleting, and
 as well as methods to reorganize data to maintain the appropriate page-filling ratio.
 
 Test file format:
+
 The test file consists of several instructions in a single line. Possible instructions are:
+
 A - add a record - followed by an integer > 0, which will be the key.
 P - displays all current pages and overflow pages.
+
 U - update a record without a key - followed by an integer - the key that identifies the record we want to update.
+
 D - delete a record - followed by an integer - the key that identifies the record we want to mark for deletion.
+
 O - allows manual file reorganization.
 
 The program generates a random record value so we do not need to complete the instruction with the value of the stored record.
 
 Implementation:
+
 The program stores the entire index in the main memory of the computer and performs operations on it there.
